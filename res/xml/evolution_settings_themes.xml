@@ -29,32 +29,30 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="themes_monet_colors_category"
         android:title="@string/themes_monet_colors_category">
 
-        <!-- Monet engine -->
         <Preference
             android:key="monet_engine"
             android:title="@string/themes_monet_title"
             android:summary="@string/themes_monet_summary"
             android:fragment="org.evolution.settings.fragments.themes.MonetSettings" />
 
-        <!-- Gradient Customization -->
         <Preference
             android:key="gradient_settings"
             android:title="@string/gradient_settings_title"
             android:summary="@string/gradient_settings_summary"
             android:fragment="org.evolution.settings.fragments.themes.GradientSettings" />
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <PreferenceCategory
         android:key="themes_icons_category"
         android:title="@string/themes_icons_category">
 
         <!-- Themes -->
-        <Preference
+        <!--<Preference
             android:key="custom_system_theme"
             android:title="@string/custom_system_theme_title"
             android:summary="@string/custom_system_theme_summary">
@@ -64,12 +62,11 @@
                 android:targetClass="com.android.axion.axthemestore.MainActivity" />
         </Preference>
 
-        <!-- Settings icon -->
         <Preference
             android:key="settings_icon"
             android:title="@string/settings_icon_title"
             android:summary="@string/settings_icon_summary"
-            android:fragment="org.evolution.settings.fragments.themes.SettingsIcon" />
+            android:fragment="org.evolution.settings.fragments.themes.SettingsIcon" />-->
 
         <!-- Icon shape -->
         <Preference
@@ -85,11 +82,11 @@
             android:fragment="org.evolution.settings.fragments.themes.NavigationBarIcons"/>
 
         <!-- Udfps icon -->
-        <Preference
+        <!--<Preference
             android:key="udfps_icon"
             android:title="@string/themes_udfps_icon_title"
             android:summary="@string/themes_udfps_icon_summary"
-            android:fragment="org.evolution.settings.fragments.themes.UdfpsIconPicker" />
+            android:fragment="org.evolution.settings.fragments.themes.UdfpsIconPicker" />-->
 
     </PreferenceCategory>
 
@@ -113,11 +110,11 @@
             android:defaultValue="0" />
 
         <!-- Udfps animation -->
-        <Preference
+        <!--<Preference
             android:key="udfps_animation"
             android:title="@string/themes_udfps_animation_title"
             android:summary="@string/themes_udfps_animation_summary"
-            android:fragment="org.evolution.settings.fragments.themes.UdfpsAnimation" />
+            android:fragment="org.evolution.settings.fragments.themes.UdfpsAnimation" />-->
 
     </PreferenceCategory>
 
@@ -139,7 +136,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="video_wallpaper_category"
         android:title="@string/video_wallpaper_category">
 
@@ -162,7 +159,7 @@
             android:summary="@string/wallpaper_settings_summary"
             android:fragment="org.evolution.settings.fragments.themes.Wallpaper" />
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <PreferenceCategory
         android:key="themes_audio_category"

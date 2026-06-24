@@ -789,30 +789,6 @@
         <item>6</item>
     </string-array>
 
-    <string-array name="smart_pixels_shift_times" translatable="false">
-        <item>@string/custom_timeout_summary_15secs</item>
-        <item>@string/custom_timeout_summary_30secs</item>
-        <item>@string/custom_timeout_summary_1min</item>
-        <item>@string/custom_timeout_summary_2mins</item>
-        <item>@string/custom_timeout_summary_5mins</item>
-        <item>@string/custom_timeout_summary_10mins</item>
-        <item>@string/custom_timeout_summary_20mins</item>
-        <item>@string/custom_timeout_summary_30mins</item>
-        <item>@string/custom_timeout_summary_1hour</item>
-    </string-array>
-
-    <string-array name="smart_pixels_shift_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-    </string-array>
-
     <!-- Apps excluded from the Tensor targets picker -->
     <string-array name="tensor_targets_hidden_apps" translatable="false">
         <item>android</item>
