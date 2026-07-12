@@ -88,7 +88,6 @@ public class PulseSettings extends SettingsPreferenceFragment implements
                 "aod_high_brightness", 60, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 "aod_pickup_brightness_boost", 0, UserHandle.USER_CURRENT);
-        EdgeLightSettings.Companion.reset(mContext);
     }
 
     

@@ -203,9 +203,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
         Settings.System.putIntForUser(resolver,
                 "statusbar_expanded_extra_padding_end", 0, UserHandle.USER_CURRENT);
 
-        BatteryBar.reset(mContext);
         DynamicBar.Companion.reset(mContext);
-        Clock.reset(mContext);
     }
 
     private void updateClockChipSummary() {
