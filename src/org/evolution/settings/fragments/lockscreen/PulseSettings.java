@@ -80,6 +80,14 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         }
     }
 
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+                "aod_low_brightness", 8, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                "aod_high_brightness", 60, UserHandle.USER_CURRENT);
+        EdgeLightSettings.Companion.reset(mContext);
+    }
+    
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mPulseRenderer) {

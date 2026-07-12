@@ -118,6 +118,30 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="aod_brightness_category"
+        android:title="@string/aod_brightness_category_title">
+
+        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
+            android:key="aod_low_brightness"
+            android:title="@string/aod_low_brightness_title"
+            android:summary="@string/aod_low_brightness_summary"
+            android:defaultValue="8"
+            android:max="255"
+            settings:min="1"
+            settings:interval="1" />
+
+        <org.evolution.settings.preferences.SystemSettingSeekBarPreference
+            android:key="aod_high_brightness"
+            android:title="@string/aod_high_brightness_title"
+            android:summary="@string/aod_high_brightness_summary"
+            android:defaultValue="60"
+            android:max="255"
+            settings:min="1"
+            settings:interval="1" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="lockscreen_weather_category"
