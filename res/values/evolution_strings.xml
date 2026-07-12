@@ -29,6 +29,11 @@
     <string name="about_summary">About our ROM</string>
     <string name="general_category_title">General</string>
     <string name="gestures_category_title">Gestures</string>
+    <string name="aod_brightness_category_title">AOD brightness</string>
+    <string name="aod_low_brightness_title">Low-light brightness</string>
+    <string name="aod_low_brightness_summary">Brightness used when the AOD sensor reports low light</string>
+    <string name="aod_high_brightness_title">Bright-light brightness</string>
+    <string name="aod_high_brightness_summary">Brightness used when the AOD sensor reports bright light</string>
 
     <!-- Reorganized categories -->
     <string name="themes_monet_colors_category">Monet &amp; Colors</string>
