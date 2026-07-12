@@ -196,12 +196,16 @@ public class StatusBar extends SettingsPreferenceFragment implements
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
 
+        Settings.System.putIntForUser(resolver,
                 "statusbar_expanded_extra_padding_start", 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 "statusbar_expanded_extra_padding_top", 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 "statusbar_expanded_extra_padding_end", 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
+
+        BatteryBar.reset(mContext);
+        DynamicBar.Companion.reset(mContext);
+        Clock.reset(mContext);
     }
 
     private void updateClockChipSummary() {
