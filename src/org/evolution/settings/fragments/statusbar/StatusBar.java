@@ -561,19 +561,6 @@ public class StatusBar extends SettingsPreferenceFragment implements
             mCustomCarrierTextPref.setSummary(mCustomCarrierText);
         }
     }
-    
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_START, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_TOP, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_END, 0, UserHandle.USER_CURRENT);
-
-        DynamicBar.Companion.reset(mContext);
-    }
 
     private void updateQuickPulldownSummary(int value) {
         String summary="";
