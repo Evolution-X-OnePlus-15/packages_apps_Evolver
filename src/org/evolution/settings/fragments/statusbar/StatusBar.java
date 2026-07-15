@@ -197,11 +197,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
         ContentResolver resolver = mContext.getContentResolver();
 
         Settings.System.putIntForUser(resolver,
-                "statusbar_expanded_extra_padding_start", 0, UserHandle.USER_CURRENT);
+                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_START, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
-                "statusbar_expanded_extra_padding_top", 0, UserHandle.USER_CURRENT);
+                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_TOP, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
-                "statusbar_expanded_extra_padding_end", 0, UserHandle.USER_CURRENT);
+                Settings.System.STATUSBAR_EXPANDED_EXTRA_PADDING_END, 0, UserHandle.USER_CURRENT);
 
         DynamicBar.Companion.reset(mContext);
     }
